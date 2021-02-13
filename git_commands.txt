@@ -1,0 +1,24 @@
+Basics:
+    - git init                                         // initializes the git
+    - git add {filname}                                // adds file to stage area
+    - git add .                                        // adds all files to stage area, . == all files
+    - git commit -m "{commit message}"                 // makes a changes and saves it
+    - git status                                       // check git status
+Branches:
+    - git checkout -b {new branch name}                // creates new branch // copy everything from master branch to new branch
+    - git checkout {branch name}                       // switch to a branch
+    - git merge {branch name = destination}            // merge current branch with destination // merge result in current branch
+Remote Repositories:
+    - git remote add origin {link to github (URL)}     // add remote (URL to antoher repository) // origin = remote
+    - git push -u origin master                        // push your master branch to github first time
+    - git push origin master                           // push your master branch to github
+    - git push origin {branch name}                    // push a new branch (create pull request)
+    - git pull origin master                           // pull your master branch
+Global Configuration:
+    - git config --global user.name "{name}"           // set name remote repository 
+    - git config --global user.email "{email}"         // set email remote repository    
+Resolve Merge Conflicts:
+    - fix the file(resolve the conflict) manually, delete errors
+    - add changes to stage area
+    - commit changes
+    - you have the merged file :)
